@@ -35,7 +35,7 @@ public class LaunchMethod {
 		// dm.setup(prop.getProperty("browser"), url);
 
 		driver = DriverManager.getDriver();
-
+    System.out.println("Adding to show you new changes in the code ");
 	}
 
 	// comment the body of code>> use control shift and press /
