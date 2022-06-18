@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Validpassword" value="test@123"/>
+  <parameter name="invalidemail" value="xyz@gmail.com"/>
+  <parameter name="validemail" value="abc@gamil.com"/>
+  <parameter name="inValidpassword" value="yut@345"/>
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.Landingvalidation">
+        <methods>
+          <include name="validateurl"/>
+          <include name="calldriver"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- test.Landingvalidation -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
